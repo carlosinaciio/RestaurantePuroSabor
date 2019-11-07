@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Restaurante Puro Sabor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="estilo/estilo2.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script type="text/javascript" src="somar.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <img src="img/logo.png">
+</div>
+  
+<div class="container">
+  <div class="row">
+    <p><strong>Bem-vindo</strong> ao Restaurante Puro Sabor</p>
+    <form name="form1" method="POST" action="cadastro.php">
+         <br>
+          <label><p>Nome:</p>
+          <input type="text" name="nome" id="op" class="form-control">
+        </label><br>
+
+        <label><p>Mesa:</p>
+          <input type="text" name="mesa" id="mesa" class="form-control">
+        </label><br><br>
+
+        <div id="entrada">
+
+          <p class="title-menu">ENTRADA</p><table class="table table-hover">
+          <tbody>
+            <br>
+            <tr>
+              <td>SALADA DE FRUTAS</td>
+              <td></td>
+              <td>R$ 10,00</td>
+              <td></td>
+              <td><input type="number" id="quant1" onclick="somar1()"></a></td>
+              <td id="resultado1"></td>
+            </tr>
+            <tr>
+              <td>PASTELZINHOS DE CARNE</td>
+              <td></td>
+              <td>R$ 12,00</td>
+              <td></td>
+              <td><input type="number" id="quant2" onclick="somar2()"></td>
+              <td id="resultado2"></td>
+            </tr>
+            <tr>
+              <td>BATATA FRITA</td>
+              <td></td>
+              <td>R$ 16,00</td>
+              <td></td>
+              <td><input type="number" id="quant3" onclick="somar3()"></td>
+              <td id="resultado3"></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        
+        <p class="title-menu">PRATOS PRINCIPAIS</p><table class="table table-hover">
+          <tbody>
+            <br>
+            <tr>
+              <td>PAMERGIANA DE FRANGO</td>
+              <td></td>
+              <td>R$ 32,00</td>
+              <td></td>
+              <td><input type="number" id="quant4" onclick="somar4()"></td>
+              <td id="resultado4"></td>
+            </tr>
+            <tr>
+              <td>CAVIÁ</td>
+              <td></td>
+              <td>R$ 52,00</td>
+              <td></td>
+              <td><input type="number" id="quant5" onclick="somar5()"></td>
+              <td id="resultado5"></td>
+            </tr>
+            <tr>
+              <td>ARROZ SIMPLES</td>
+              <td></td>
+              <td>R$ 13,00</td>
+              <td></td>
+              <td><input type="number" id="quant6" onclick="somar6()"></td>
+              <td id="resultado6"></td>
+            </tr>
+          </tbody>
+        </table>
+        
+
+        <p class="title-menu">SOBREMESAS</p><table class="table table-hover">
+          <tbody>
+            <br>
+            <tr>
+              <td>PUDIM DE LEITE GOURMERT</td>
+              <td></td>
+              <td>R$ 40,00</td>
+              <td></td>
+              <td><input type="number" id="quant7" onclick="somar7()"></td>
+              <td id="resultado7"></td>
+            </tr>
+            <tr>
+              <td>SORVETE GOURMERT</td>
+              <td></td>
+              <td>R$ 60,00</td>
+              <td></td>
+              <td><input type="number" id="quant8" onclick="somar8()"></td>
+              <td id="resultado8"></td>
+            </tr>
+            <tr>
+              <td>PEDAÇO DE PUDIM</td>
+              <td></td>
+              <td>R$ 5,00</td>
+              <td></td>
+              <td><input type="number" id="quant9" onclick="somar9()"></td>
+              <td id="resultado9"></td>
+            </tr>
+            <tr>
+            
+          <td><input type="button" name="calcular" value="Calcular pedido" class="btn btn-success" onclick="calculartudo()"></td>
+          
+          <td id="totaltudo"></td>
+            
+          </tbody>
+        
+        
+       <td> <input type="submit" value="Cadastrar pedido" name="Cadastrar" class="btn btn-success"></td>
+          
+        </form>  
+        <Br><br>
+        <form name="form1" method="POST" action="listar.php"> 
+       <tr>
+       <td> <input type="submit" value="Pedidos em espera" name="Listar" class="btn btn-success"></td>
+          </tr>
+        </form>  
+        </tr>     
+        </div>
+        </table>
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
